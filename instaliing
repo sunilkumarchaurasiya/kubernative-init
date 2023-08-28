@@ -3,7 +3,7 @@ Master:
 -------
 sudo apt update
 sudo apt upgrade
-sudo apt install docker.io
+sudo apt install docker.io -y
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo systemctl status docker
