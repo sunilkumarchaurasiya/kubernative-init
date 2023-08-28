@@ -1,6 +1,6 @@
-
-Master:
--------
+#kunadim setup
+#Master:
+#-------
 sudo apt update
 sudo apt upgrade
 sudo apt install docker.io -y
@@ -16,8 +16,7 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 kubeadm version
 sudo hostnamectl set-hostname master-node
-
-sudo kubeadm init --pod-network-cidr=172.31.0.0/16(private ip address of your master)
+sudo kubeadm init --pod-network-cidr=172.31.0.0/16 #(private ip address of your master)
   mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
