@@ -20,6 +20,7 @@ sudo kubeadm init --pod-network-cidr=172.31.0.0/16 #(private ip address of your 
   mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
+#also whightlist the ports for your master and worker take referance from the k8s referecne guide
 
 Worker:
 -------
